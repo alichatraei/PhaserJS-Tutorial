@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session3</title>
+  </head>
+  <body>
+    <script src="phaser.min.js"></script>
+    <script>
+      function create() {
+        this.add.circle(50, 60, 30, 0xff8030);
+      }
+      let config = {
+        width: 500,
+        height: 400,
+        backgroundColor: 0xffff12,
+        type: Phaser.AUTO,
+        scene: {
+          create,
+        },
+      };
+      let game = new Phaser.Game(config);
+    </script>
+  </body>
+</html>
